@@ -12,6 +12,7 @@ $file =file_get_contents($url);
 $filename =pathinfo($url,PATHINFO_BASENAME);
 
 file_put_contents($filename, $file);
+echo "<img src='$url' width='250px' height='250px'  />";
 
 var_dump('Image is downloaded to this server.........thanks.......');
 /* --------------Image Download -------------*/
