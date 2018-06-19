@@ -2,7 +2,15 @@
 echo "<h1>String Function in PHP</h1>";
 echo "<pre>strlen function</pre>";
 echo "Krishna: ".strlen("Krishna");
-
+echo "<pre>strpos function</pre>";
+$mystring= "Android PHP";
+$find="PHP";
+$start=strpos($mystring, $find);
+echo $start;
+echo "<br>";
+$stop=strlen($find);
+echo substr($mystring, $start,$stop);
+echo "<br>";
 echo "<pre>similar_text function</pre>";
 echo similar_text("krishna php","krishna java");
 echo "<pre>str_pad(string,length,pad_string,pad_type)</pre>";
