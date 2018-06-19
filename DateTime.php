@@ -22,3 +22,13 @@ echo "<b>l-F-y :</b>".date("l-F-y")."<br>";
 echo "<b>d/m/y h:i:s a :</b>".date("d/m/y h:i:s a")."<br>";
 echo "<b>d/m/y h:i:s a :</b>".date("d/m/y h:i:s a")."<br>";
 echo "<b>d/m/y G:i:s A :</b>".date("d/m/y G:i:s A")."<br>";
+
+echo "<h1>Timestamps in PHP</h1>";
+       echo "mktime: ".mktime(0,0,0,06,19,2018)."<br>";
+       echo strtotime("now")."<br>";
+       echo strtotime("+5 hours")."<br>";
+       echo strtotime("19 June 2018")."<br>";
+       echo strtotime("-1 week")."<br>";
+       echo strtotime("+1 week 3 days 7 hours 5 seconds")."<br>";
+       echo strtotime("next sunday")."<br>";
+       echo strtotime("last sunday")."<br>";
