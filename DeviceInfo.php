@@ -12,8 +12,8 @@ echo $hostname;
 
 echo "<h2>PHP- How to get the ip address of the website</h2>";
 echo gethostbyname("gaana.com");
-
-
-
+echo "<br>";
+  
+echo $_SERVER['REQUEST_URI'];
 
 
