@@ -50,7 +50,7 @@ if($img_error=="4"){
 
 if($sql=mysqli_query($conn,$query)){
 	if (is_file($old_img_path)) {
-		// chmod($path, 0777);
+		
 		if(unlink($old_img_path)){
 			move_uploaded_file($img_file,$path.$img_name);
 			echo "<br><b>Delete_image to New Image Upload</b>";
